@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description" content="Admin, Dashboard, Bootstrap" />
+  <link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.png">
+  <title>Infinity - Bootstrap Admin Template</title>
+  
+  <link rel="stylesheet" href="../libs/bower/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../libs/bower/material-design-iconic-font/dist/css/material-design-iconic-font.css">
+  <!-- build:css ../assets/css/app.min.css -->
+  <link rel="stylesheet" href="../libs/bower/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../libs/bower/fullcalendar/dist/fullcalendar.min.css">
+  <link rel="stylesheet" href="../libs/bower/perfect-scrollbar/css/perfect-scrollbar.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/core.css">
+  <link rel="stylesheet" href="../assets/css/app.css">
+  <!-- endbuild -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900,300">
+  <script src="../libs/bower/breakpoints.js/dist/breakpoints.min.js"></script>
+  <script>
+    Breakpoints();
+  </script>
+</head>
+  
+<body class="menubar-left menubar-unfold menubar-light theme-primary">
+<!--============= start main area -->
+
+<!-- APP NAVBAR ==========-->
+<nav id="app-navbar" class="navbar navbar-inverse navbar-fixed-top primary">
+  
+  <!-- navbar header -->
+  <div class="navbar-header">
+    <button type="button" id="menubar-toggle-btn" class="navbar-toggle visible-xs-inline-block navbar-toggle-left hamburger hamburger--collapse js-hamburger">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+    </button>
+
+    <button type="button" class="navbar-toggle navbar-toggle-right collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="zmdi zmdi-hc-lg zmdi-more"></span>
+    </button>
+
+    <button type="button" class="navbar-toggle navbar-toggle-right collapsed" data-toggle="collapse" data-target="#navbar-search" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="zmdi zmdi-hc-lg zmdi-search"></span>
+    </button>
+
+    <a href="../index.html" class="navbar-brand">
+      <span class="brand-name text-uppercase">Tonesky</span>
+    </a>
+  </div><!-- .navbar-header -->
+  
+  <div class="navbar-container container-fluid">
+    <div class="collapse navbar-collapse" id="app-navbar-collapse">
+
+      <ul class="nav navbar-toolbar navbar-toolbar-right navbar-right">
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="side-panel-toggle" data-toggle="class" data-target="#side-panel" data-class="open" role="button"><i class="zmdi zmdi-hc-lg zmdi-notifications"></i></a>
+        </li>
+
+        <li class="nav-item dropdown hidden-float">
+          <a href="javascript:void(0)" data-toggle="collapse" data-target="#navbar-search" aria-expanded="false">
+            <i class="zmdi zmdi-hc-lg zmdi-search"></i>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div><!-- navbar-container -->
+</nav>
+<!--========== END app navbar -->
+
+<!-- APP ASIDE ==========-->
+<aside id="menubar" class="menubar light">
+  <div class="app-user">
+    <div class="media">
+      <div class="media-left">
+        <div class="avatar avatar-md avatar-circle">
+          <a href="javascript:void(0)"><img class="img-responsive" src="../assets/images/221.jpg" alt="avatar"/></a>
+        </div><!-- .avatar -->
+      </div>
+      <div class="media-body">
+        <div class="foldable">
+          <h5><a href="javascript:void(0)" class="username">Название студии</a></h5>
+          <ul>
+            <li class="dropdown">
+              <a href="">
+                <small>Настройки</small>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div><!-- .media-body -->
+    </div><!-- .media -->
+  </div><!-- .app-user -->
+
+  <div class="menubar-scroll">
+    <div class="menubar-scroll-inner">
+      <ul class="app-menu">
+        <li class="has-submenu">
+          <a href="index.html">
+            <i class="menu-icon zmdi zmdi-view-dashboard zmdi-hc-lg text-center"></i>
+            <span class="menu-text">Панель управления</span>
+          </a>
+        </li>
+        
+        <li class="has-submenu">
+          <a href="info.html">
+            <i class="menu-icon fa fa-info text-center"></i>
+            <span class="menu-text">Информация студии</span>
+          </a>
+        </li>
+
+        <li class="has-submenu">
+          <a href="javascript:void(0)" class="submenu-toggle">
+            <i class="menu-icon fa fa-gears text-center"></i>
+              <span class="menu-text">Комнаты</span>
+          </a>
+          <ul class="submenu">
+            <li><a href="inforoom.html"><span class="menu-text">Первая комната</span><i class="p-r-xs menu-label text-primary fa fa-square" aria-hidden="true"></i></a></li>
+            <li><a href="inforoom.html"><span class="menu-text">Вторая комната</span><i class="p-r-xs menu-label text-danger fa fa-square" aria-hidden="true"></i></a></li>
+            <li><a href="inforoom.html"><span class="menu-text">Третья комната</span><i class="p-r-xs menu-label text-success fa fa-square" aria-hidden="true"></i></a></li>
+            <li><a href="inforoom.html"><span class="menu-text">Четвертая комната</span><i class="p-r-xs menu-label text-warning fa fa-square" aria-hidden="true"></i></a></li>
+            <li><a href="inforoom.html"><span class="menu-text text-muted">Добавить комнату</span><i class="p-r-xs menu-label text-muted fa fa-plus" aria-hidden="true"></i></a></li>
+          </ul>
+        </li>
+
+        <li class="menu-separator"><hr></li>
+
+        <li class="has-submenu">
+          <a href="news.html">
+            <i class="menu-icon fa fa-globe text-center"></i>
+            <span class="menu-text">Добавление новости</span>
+          </a>
+        </li>
+
+        <li class="has-submenu">
+          <a href="hot.html">
+            <i class="menu-icon fa fa-bullhorn text-center"></i>
+            <span class="menu-text">Горячие предложения</span>
+          </a>
+        </li>
+        
+        <li class="has-submenu">
+          <a href="orders.html">
+            <i class="menu-icon fa fa-sticky-note-o text-center"></i>
+            <span class="menu-text">Журнал заказов</span>
+            <span class="label label-primary menu-label">1</span>
+          </a>
+        </li>
+
+        <li class="has-submenu">
+          <a href="clients.html">
+            <i class="menu-icon fa fa-users center"></i>
+            <span class="menu-text">Клиенты</span>
+          </a>
+        </li>
+
+      </ul><!-- .app-menu -->
+    </div><!-- .menubar-scroll-inner -->
+  </div><!-- .menubar-scroll -->
+</aside>
+<!--========== END app aside -->
+
+<!-- navbar search -->
+<div id="navbar-search" class="navbar-search collapse">
+  <div class="navbar-search-inner">
+    <form action="#">
+      <span class="search-icon"><i class="fa fa-search"></i></span>
+      <input class="search-field" type="search" placeholder="искать..."/>
+    </form>
+    <button type="button" class="search-close" data-toggle="collapse" data-target="#navbar-search" aria-expanded="false">
+      <i class="fa fa-close"></i>
+    </button>
+  </div>
+  <div class="navbar-search-backdrop" data-toggle="collapse" data-target="#navbar-search" aria-expanded="false"></div>
+</div><!-- .navbar-search -->
+
+<!-- APP MAIN ==========-->
+<main id="app-main" class="app-main">
+  <div class="wrap">
+  <section class="app-content">
+  	<div class="widget">
+		<header class="widget-header">
+			<h3 class="p-l-lg">Журнал заказов</h3>
+		</header><!-- .widget-header -->
+		<hr>
+		<div class="widget-body">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="widget-title fz-lg text-primary p-h-xl p-v-lg">Заказы</h3>
+          </div>
+        </div>
+
+          <div class="row">
+            <div class=" nav-tabs-vertical clearfix">
+              <ul class="col-xs-12 col-sm-3 nav nav-tabs" role="tablist">
+                <li class="p-l-xs active" role="presentation"><a data-toggle="tab" href="#vt-example-1" aria-controls="vt-example-1" role="tab" aria-expanded="false">Все комнаты</a></li>
+                <li class="p-l-xs" role="presentation"><a data-toggle="tab" href="#vt-example-2" aria-controls="vt-example-2" role="tab" aria-expanded="true">Первая комната</a></li>
+                <li class="p-l-xs" role="presentation"><a data-toggle="tab" href="#vt-example-3" aria-controls="vt-example-3" role="tab">Вторая комната</a></li>
+                <li class="p-l-xs" role="presentation"><a data-toggle="tab" href="#vt-example-4" aria-controls="vt-example-4" role="tab">Третья комната</a></li>
+                <li class="p-l-xs" role="presentation"><a data-toggle="tab" href="#vt-example-5" aria-controls="vt-example-5" role="tab">Четвертая комната</a></li>
+              </ul>
+              <div class="col-xs-12 col-sm-8 tab-content">
+                <div class="tab-pane active" id="vt-example-1" role="tabpanel">
+                  <div id="lineChart" data-plugin="plot" data-options="
+                [
+                  {
+                    data: [[1,3.6],[2,3.5],[3,6],[4,4],[5,4.3],[6,3.5],[7,3.6]],
+                    color: '#ffa000',
+                    lines: { show: true, lineWidth: 6 },
+                    curvedLines: { apply: true }
+                  },
+                  {
+                    data: [[1,3.6],[2,3.5],[3,6],[4,4],[5,4.3],[6,3.5],[7,3.6]],
+                    color: '#ffa000',
+                    points: {show: true}
+                  }
+                ],
+                {
+                  series: {
+                    curvedLines: { active: true }
+                  },
+                  xaxis: {
+                    show: true,
+                    font: { size: 12, lineHeight: 10, style: 'normal', weight: '100',family: 'lato', variant: 'small-caps', color: '#a2a0a0' }
+                  },
+                  yaxis: {
+                    show: true,
+                    font: { size: 12, lineHeight: 10, style: 'normal', weight: '100',family: 'lato', variant: 'small-caps', color: '#a2a0a0' }
+                  },
+                  grid: { color: '#a2a0a0', hoverable: true, margin: 8, labelMargin: 8, borderWidth: 0, backgroundColor: '#fff' },
+                  tooltip: true,
+                  tooltipOpts: { content: 'X: %x.0, Y: %y.2',  defaultTheme: false, shifts: { x: 0, y: -40 } },
+                  legend: { show: false }
+                }" style="width: 100%; height: 230px;">
+              </div>
+                </div>
+                <div class="tab-pane " id="vt-example-2" role="tabpanel">
+                  <div id="lineChart" data-plugin="plot" data-options="
+                [
+                  {
+                    data: [[1,3.6],[2,3.5],[3,6],[4,4],[5,4.3],[6,3.5],[7,3.6]],
+                    color: '#ffa000',
+                    lines: { show: true, lineWidth: 6 },
+                    curvedLines: { apply: true }
+                  },
+                  {
+                    data: [[1,3.6],[2,3.5],[3,6],[4,4],[5,4.3],[6,3.5],[7,3.6]],
+                    color: '#ffa000',
+                    points: {show: true}
+                  }
+                ],
+                {
+                  series: {
+                    curvedLines: { active: true }
+                  },
+                  xaxis: {
+                    show: true,
+                    font: { size: 12, lineHeight: 10, style: 'normal', weight: '100',family: 'lato', variant: 'small-caps', color: '#a2a0a0' }
+                  },
+                  yaxis: {
+                    show: true,
+                    font: { size: 12, lineHeight: 10, style: 'normal', weight: '100',family: 'lato', variant: 'small-caps', color: '#a2a0a0' }
+                  },
+                  grid: { color: '#a2a0a0', hoverable: true, margin: 8, labelMargin: 8, borderWidth: 0, backgroundColor: '#fff' },
+                  tooltip: true,
+                  tooltipOpts: { content: 'X: %x.0, Y: %y.2',  defaultTheme: false, shifts: { x: 0, y: -40 } },
+                  legend: { show: false }
+                }" style="width: 100%; height: 230px;">
+              </div>
+                </div>
+                <div class="tab-pane " id="vt-example-3" role="tabpanel">
+                  <div id="lineChart" data-plugin="plot" data-options="
+                [
+                  {
+                    data: [[1,3.6],[2,3.5],[3,6],[4,4],[5,4.3],[6,3.5],[7,3.6]],
+                    color: '#ffa000',
+                    lines: { show: true, lineWidth: 6 },
+                    curvedLines: { apply: true }
+                  },
+                  {
+                    data: [[1,3.6],[2,3.5],[3,6],[4,4],[5,4.3],[6,3.5],[7,3.6]],
+                    color: '#ffa000',
+                    points: {show: true}
+                  }
+                ],
+                {
+                  series: {
+                    curvedLines: { active: true }
+                  },
+                  xaxis: {
+                    show: true,
+                    font: { size: 12, lineHeight: 10, style: 'normal', weight: '100',family: 'lato', variant: 'small-caps', color: '#a2a0a0' }
+                  },
+                  yaxis: {
+                    show: true,
+                    font: { size: 12, lineHeight: 10, style: 'normal', weight: '100',family: 'lato', variant: 'small-caps', color: '#a2a0a0' }
+                  },
+                  grid: { color: '#a2a0a0', hoverable: true, margin: 8, labelMargin: 8, borderWidth: 0, backgroundColor: '#fff' },
+                  tooltip: true,
+                  tooltipOpts: { content: 'X: %x.0, Y: %y.2',  defaultTheme: false, shifts: { x: 0, y: -40 } },
+                  legend: { show: false }
+                }" style="width: 100%; height: 230px;">
+              </div>
+                </div>
+                <div class="tab-pane " id="vt-example-4" role="tabpanel">
+                  <div id="lineChart" data-plugin="plot" data-options="
+                [
+                  {
+                    data: [[1,3.6],[2,3.5],[3,6],[4,4],[5,4.3],[6,3.5],[7,3.6]],
+                    color: '#ffa000',
+                    lines: { show: true, lineWidth: 6 },
+                    curvedLines: { apply: true }
+                  },
+                  {
+                    data: [[1,3.6],[2,3.5],[3,6],[4,4],[5,4.3],[6,3.5],[7,3.6]],
+                    color: '#ffa000',
+                    points: {show: true}
+                  }
+                ],
+                {
+                  series: {
+                    curvedLines: { active: true }
+                  },
+                  xaxis: {
+                    show: true,
+                    font: { size: 12, lineHeight: 10, style: 'normal', weight: '100',family: 'lato', variant: 'small-caps', color: '#a2a0a0' }
+                  },
+                  yaxis: {
+                    show: true,
+                    font: { size: 12, lineHeight: 10, style: 'normal', weight: '100',family: 'lato', variant: 'small-caps', color: '#a2a0a0' }
+                  },
+                  grid: { color: '#a2a0a0', hoverable: true, margin: 8, labelMargin: 8, borderWidth: 0, backgroundColor: '#fff' },
+                  tooltip: true,
+                  tooltipOpts: { content: 'X: %x.0, Y: %y.2',  defaultTheme: false, shifts: { x: 0, y: -40 } },
+                  legend: { show: false }
+                }" style="width: 100%; height: 230px;">
+              </div>
+                </div>
+                <div class="tab-pane " id="vt-example-5" role="tabpanel">
+                  <div id="lineChart" data-plugin="plot" data-options="
+                [
+                  {
+                    data: [[1,3.6],[2,3.5],[3,6],[4,4],[5,4.3],[6,3.5],[7,3.6]],
+                    color: '#ffa000',
+                    lines: { show: true, lineWidth: 6 },
+                    curvedLines: { apply: true }
+                  },
+                  {
+                    data: [[1,3.6],[2,3.5],[3,6],[4,4],[5,4.3],[6,3.5],[7,3.6]],
+                    color: '#ffa000',
+                    points: {show: true}
+                  }
+                ],
+                {
+                  series: {
+                    curvedLines: { active: true }
+                  },
+                  xaxis: {
+                    show: true,
+                    font: { size: 12, lineHeight: 10, style: 'normal', weight: '100',family: 'lato', variant: 'small-caps', color: '#a2a0a0' }
+                  },
+                  yaxis: {
+                    show: true,
+                    font: { size: 12, lineHeight: 10, style: 'normal', weight: '100',family: 'lato', variant: 'small-caps', color: '#a2a0a0' }
+                  },
+                  grid: { color: '#a2a0a0', hoverable: true, margin: 8, labelMargin: 8, borderWidth: 0, backgroundColor: '#fff' },
+                  tooltip: true,
+                  tooltipOpts: { content: 'X: %x.0, Y: %y.2',  defaultTheme: false, shifts: { x: 0, y: -40 } },
+                  legend: { show: false }
+                }" style="width: 100%; height: 230px;">
+              </div>
+                </div>
+              </div>
+            </div><!-- .nav-tabs-vertical -->
+           </div>
+		<div class="row p-t-xl">
+			<div class="col-md-6 col-sm-6">
+                    <div class="widget p-md clearfix">
+            <div class="pull-left">
+              <h3 class="widget-title">Актуальные заказы</h3>
+              
+            </div>
+            <span class="pull-right fz-lg fw-500 counter" data-plugin="counterUp">102</span>
+                    </div><!-- .widget -->
+                  </div>
+            
+                  <div class="col-md-6 col-sm-6">
+                    <div class="widget p-md clearfix">
+            <div class="pull-left">
+              <h3 class="widget-title">Всего заказов</h3>
+              
+            </div>
+            <span class="pull-right fz-lg fw-500 counter" data-plugin="counterUp">325</span>
+                    </div><!-- .widget -->
+                  </div>
+            <div class="col-md-6 col-sm-6">
+                    <div class="widget p-md clearfix">
+            <div class="pull-left">
+              <h3 class="widget-title">Заказы через TONESKY</h3>
+              
+            </div>
+            <span class="pull-right fz-lg fw-500 counter" data-plugin="counterUp">275</span>
+                    </div><!-- .widget -->
+                  </div>
+            
+                  <div class="col-md-6 col-sm-6">
+                    <div class="widget p-md clearfix">
+            <div class="pull-left">
+              <h3 class="widget-title">Остальные заказы</h3>
+              
+            </div>
+            <span class="pull-right fz-lg fw-500 counter" data-plugin="counterUp">50</span>
+                    </div><!-- .widget -->
+                  </div>
+		</div>
+		<div class="row p-t-xl p-v-xl">
+			<table class="table custom-val">
+						<tr>
+							<th>Комната</th>
+							<th>Клиент</th>
+							<th>Дата</th>
+							<th>Начало</th>
+							<th>Окончание</th>
+							<th>Статус</th>
+						</tr>
+						<tr class="success text-color">
+							<td class="text-primary">Column content</td>
+							<td>
+                <ul>
+                  <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle usertitle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Column content
+                      <span class="caret"></span>
+                    </a>
+                    <div class="custom-media dropdown-menu animated flipInY">
+                      <div class="custom-media user-card contact-item p-md">
+          <div class="media">
+            <div class="media-left">
+              <div class="avatar avatar-xl avatar-circle">
+                <img src="../assets/images/101.jpg" alt="contact image">
+              </div>
+            </div>
+            <div class="media-body">
+              <h5 class="media-heading title-color">John Doe</h5>
+              <small class="media-meta">Web Developer</small>
+              <div class="contact-links m-t-sm">
+                <a href="javascript:void(0)" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Phone" data-placement="top"><i class="fa fa-phone"></i></a>
+                <a href="javascript:void(0)" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Mobile" data-placement="top"><i class="fa fa-mobile"></i></a>
+                <a href="mailto:example@rathemes.com" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="example@rathemes.com" data-placement="top"><i class="fa fa-envelope-o"></i></a>
+                <a href="javascript:void(0)" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="rathemes" data-placement="top"><i class="fa fa-skype"></i></a>
+                <a href="https://facebook.com/rathemes" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Facebook" data-placement="top"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/rathemes" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Twitter" data-placement="top"><i class="fa fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-item-actions">
+            <a href="javascript:void(0)" class="btn btn-success" data-toggle="modal" data-target="#contactModal"><i class="fa fa-pencil"></i></a>
+            <a href="javascript:void(0)" class="btn btn-danger" data-toggle="modal" data-target="#deleteItemModal"><i class="fa fa-trash"></i></a>
+          </div><!-- .contact-item-actions -->
+        </div><!-- user-card -->
+                    </div>
+                  </li>
+                </ul>
+              </td>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>
+								<div id="control-demo-1">
+							<select class="form-control">
+								<option>Одобрено</option>
+								<option>Отклонено</option>
+								<option>Ожидание</option>
+							</select>
+						</div>
+							</td>
+						</tr>
+						<tr class="success text-color">
+							<td class="text-danger">Column content</td>
+							<td><ul>
+                  <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle usertitle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Column content
+                      <span class="caret"></span>
+                    </a>
+                    <div class="custom-media dropdown-menu animated flipInY">
+                      <div class="custom-mediauser-card contact-item p-md">
+          <div class="media">
+            <div class="media-left">
+              <div class="avatar avatar-xl avatar-circle">
+                <img src="../assets/images/101.jpg" alt="contact image">
+              </div>
+            </div>
+            <div class="media-body">
+              <h5 class="media-heading title-color">John Doe</h5>
+              <small class="media-meta">Web Developer</small>
+              <div class="contact-links m-t-sm">
+                <a href="javascript:void(0)" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Phone" data-placement="top"><i class="fa fa-phone"></i></a>
+                <a href="javascript:void(0)" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Mobile" data-placement="top"><i class="fa fa-mobile"></i></a>
+                <a href="mailto:example@rathemes.com" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="example@rathemes.com" data-placement="top"><i class="fa fa-envelope-o"></i></a>
+                <a href="javascript:void(0)" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="rathemes" data-placement="top"><i class="fa fa-skype"></i></a>
+                <a href="https://facebook.com/rathemes" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Facebook" data-placement="top"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/rathemes" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Twitter" data-placement="top"><i class="fa fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-item-actions">
+            <a href="javascript:void(0)" class="btn btn-success" data-toggle="modal" data-target="#contactModal"><i class="fa fa-pencil"></i></a>
+            <a href="javascript:void(0)" class="btn btn-danger" data-toggle="modal" data-target="#deleteItemModal"><i class="fa fa-trash"></i></a>
+          </div><!-- .contact-item-actions -->
+        </div><!-- user-card -->
+                    </div>
+                  </li>
+                </ul></td>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>
+								<div id="control-demo-2">
+							<select class="form-control">
+								<option>Одобрено</option>
+								<option>Отклонено</option>
+								<option>Ожидание</option>
+							</select>
+						</div>
+							</td>
+						</tr>
+						<tr class="danger text-color">
+							<td class="text-success">Column content</td>
+							<td><ul>
+                  <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle usertitle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Column content
+                      <span class="caret"></span>
+                    </a>
+                    <div class="custom-media dropdown-menu animated flipInY">
+                      <div class="custom-mediauser-card contact-item p-md">
+          <div class="media">
+            <div class="media-left">
+              <div class="avatar avatar-xl avatar-circle">
+                <img src="../assets/images/101.jpg" alt="contact image">
+              </div>
+            </div>
+            <div class="media-body">
+              <h5 class="media-heading title-color">John Doe</h5>
+              <small class="media-meta">Web Developer</small>
+              <div class="contact-links m-t-sm">
+                <a href="javascript:void(0)" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Phone" data-placement="top"><i class="fa fa-phone"></i></a>
+                <a href="javascript:void(0)" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Mobile" data-placement="top"><i class="fa fa-mobile"></i></a>
+                <a href="mailto:example@rathemes.com" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="example@rathemes.com" data-placement="top"><i class="fa fa-envelope-o"></i></a>
+                <a href="javascript:void(0)" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="rathemes" data-placement="top"><i class="fa fa-skype"></i></a>
+                <a href="https://facebook.com/rathemes" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Facebook" data-placement="top"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/rathemes" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Twitter" data-placement="top"><i class="fa fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-item-actions">
+            <a href="javascript:void(0)" class="btn btn-success" data-toggle="modal" data-target="#contactModal"><i class="fa fa-pencil"></i></a>
+            <a href="javascript:void(0)" class="btn btn-danger" data-toggle="modal" data-target="#deleteItemModal"><i class="fa fa-trash"></i></a>
+          </div><!-- .contact-item-actions -->
+        </div><!-- user-card -->
+                    </div>
+                  </li>
+                </ul></td>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>
+								<div id="control-demo-2">
+							<select class="form-control">
+								<option>Одобрено</option>
+								<option>Отклонено</option>
+								<option>Ожидание</option>								
+							</select>
+						</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-warning">Column content</td>
+							<td><ul>
+                  <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle usertitle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Column content
+                      <span class="caret"></span>
+                    </a>
+                    <div class="custom-media dropdown-menu animated flipInY">
+                      <div class="custom-mediauser-card contact-item p-md">
+          <div class="media">
+            <div class="media-left">
+              <div class="avatar avatar-xl avatar-circle">
+                <img src="../assets/images/101.jpg" alt="contact image">
+              </div>
+            </div>
+            <div class="media-body">
+              <h5 class="media-heading title-color">John Doe</h5>
+              <small class="media-meta">Web Developer</small>
+              <div class="contact-links m-t-sm">
+                <a href="javascript:void(0)" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Phone" data-placement="top"><i class="fa fa-phone"></i></a>
+                <a href="javascript:void(0)" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Mobile" data-placement="top"><i class="fa fa-mobile"></i></a>
+                <a href="mailto:example@rathemes.com" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="example@rathemes.com" data-placement="top"><i class="fa fa-envelope-o"></i></a>
+                <a href="javascript:void(0)" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="rathemes" data-placement="top"><i class="fa fa-skype"></i></a>
+                <a href="https://facebook.com/rathemes" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Facebook" data-placement="top"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/rathemes" class="icon icon-circle icon-sm m-b-0" data-toggle="tooltip" title="Twitter" data-placement="top"><i class="fa fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-item-actions">
+            <a href="javascript:void(0)" class="btn btn-success" data-toggle="modal" data-target="#contactModal"><i class="fa fa-pencil"></i></a>
+            <a href="javascript:void(0)" class="btn btn-danger" data-toggle="modal" data-target="#deleteItemModal"><i class="fa fa-trash"></i></a>
+          </div><!-- .contact-item-actions -->
+        </div><!-- user-card -->
+                    </div>
+                  </li>
+                </ul></td>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>
+								<div id="control-demo-2">
+							<select class="form-control">
+								<option>Одобрено</option>
+								<option>Отклонено</option>
+								<option>Ожидание</option>								
+							</select>
+						</div>
+							</td>
+						</tr>
+					</table>
+		</div>
+
+
+		</div><!-- .widget-body <-->
+	</div><!-- .widget -->
+
+  </section><!-- #dash-content -->
+</div><!-- .wrap -->
+  <!-- APP FOOTER -->
+  <div class="wrap p-t-0">
+    <footer class="app-footer">
+      <div class="clearfix">
+        <ul class="footer-menu pull-right">
+          <li><a href="">Обратная связь</a></li>
+        </ul>
+        <div class="copyright pull-left">Copyright TONESKY</div>
+      </div>
+    </footer>
+  </div>
+  <!-- /#app-footer -->
+</main>
+<!--========== END app main -->
+  
+  <!-- SIDE PANEL -->
+  <div id="side-panel" class="side-panel">
+    <div class="panel-header">
+      <h4>Уведомления</h4>
+    </div>
+    <div class="scrollable-container">
+      <div class="media-group">
+        <div class="widget-body p-h-lg">
+            <div class="media">
+              <div class="media-left">
+                <div class="avatar avatar-lg avatar-circle">
+                  <img class="img-responsive" src="../assets/images/209.jpg" alt="avatar"/>
+                  <i class="status status-online"></i>
+                </div><!-- .avatar -->
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Первая комната</h4>
+                <small class="media-meta text-muted">Имя пользователя</small>
+                <small class="media-meta text-muted">11.11.2011 18:00-21:00</small>
+                <div class="btn-group pull-right" role="group">
+                  <a href="#" class="btn btn-xs p-v-md btn-outline btn-success"><i class="fa fa-check"></i></a>
+                  <a href="#" class="btn btn-xs p-v-md btn-outline btn-info"><i class="fa fa-pencil"></i></a>
+                  <a href="#" class="btn btn-xs p-v-md btn-outline btn-danger"><i class="fa fa-remove"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="widget-body p-h-lg">
+            <div class="media">
+              <div class="media-left">
+                <div class="avatar avatar-lg avatar-circle">
+                  <img class="img-responsive" src="../assets/images/209.jpg" alt="avatar"/>
+                  <i class="status status-away"></i>
+                </div><!-- .avatar -->
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Вторая комната</h4>
+                <small class="media-meta text-muted">Имя пользователя</small>
+                <small class="media-meta text-muted">11.11.2011 18:00-21:00</small>
+                <div class="btn-group pull-right" role="group">
+                  <a href="#" class="btn btn-xs p-v-md btn-outline btn-success"><i class="fa fa-check"></i></a>
+                  <a href="#" class="btn btn-xs p-v-md btn-outline btn-info"><i class="fa fa-pencil"></i></a>
+                  <a href="#" class="btn btn-xs p-v-md btn-outline btn-danger"><i class="fa fa-remove"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="widget-body p-h-lg">
+            <div class="media">
+              <div class="media-left">
+                <div class="avatar avatar-lg avatar-circle">
+                  <img class="img-responsive" src="../assets/images/209.jpg" alt="avatar"/>
+                  <i class="status status-offline"></i>
+                </div><!-- .avatar -->
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Третья комната</h4>
+                <small class="media-meta text-muted">Имя пользователя</small>
+                <small class="media-meta text-muted">11.11.2011 18:00-21:00</small>
+                <div class="btn-group pull-right" role="group">
+                  <a href="#" class="btn btn-xs p-v-md btn-outline btn-success"><i class="fa fa-check"></i></a>
+                  <a href="#" class="btn btn-xs p-v-md btn-outline btn-info"><i class="fa fa-pencil"></i></a>
+                  <a href="#" class="btn btn-xs p-v-md btn-outline btn-danger"><i class="fa fa-remove"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+    </div><!-- .scrollable-container -->
+  </div><!-- /#side-panel -->
+
+  <!-- build:js ../assets/js/core.min.js -->
+  <script src="../libs/bower/jquery/dist/jquery.js"></script>
+  <script src="../libs/bower/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../libs/bower/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+  <script src="../libs/bower/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+  <script src="../libs/bower/jquery-slimscroll/jquery.slimscroll.js"></script>
+  <script src="../libs/bower/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+  <script src="../libs/bower/PACE/pace.min.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js ../assets/js/app.min.js -->
+  <script src="../assets/js/library.js"></script>
+  <script src="../assets/js/plugins.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <!-- endbuild -->
+  <script src="../libs/bower/moment/moment.js"></script>
+  <script src="../libs/bower/fullcalendar/dist/fullcalendar.min.js"></script>
+  <script src="../libs/bower/fullcalendar/dist/lang-all.js"></script>
+  <script src="../assets/js/fullcalendar.js"></script>
+</body>
+</html>
